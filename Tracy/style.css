@@ -1,0 +1,71 @@
+body {
+	background-image:url('blue.jpg');
+	height:100%;
+	color: #333;
+	font-size: 14px;
+	font-family: 'Bangers', cursive;
+	padding: 0;
+}
+
+* {
+	box-sizing: border-box;
+	font-family: 'Raleway', sans-serif;
+	margin: 0;
+	font-size: 16px;
+	outline: none;
+}
+
+input, button {
+	border: 0;
+	padding: 10px;
+}
+
+.mainDiv {
+	background: #fff;
+	padding: 20px;
+	width: 700px;
+	margin: 0px auto;
+	margin-top: 100px;
+	box-shadow: 0 0 20px #333;
+}
+
+h1 {
+	font-weight: 300;
+	font-size: 24px;
+}
+
+textarea {
+	border: 0px;
+	background: #fff;
+	padding: 20px 0px;
+	outline: none;
+	width: 100%;
+	resize: none;
+}
+
+button {
+	background: #528bff;
+	color: #fff;
+	position: relative;
+	top: 50px;
+	width: 64px;
+	height: 64px;
+	line-height: 38px;
+	border-radius: 100%;
+}
+
+button:hover {
+	background:#e0e0d1;
+	cursor:pointer;
+}
+
+image {
+	width:304px;
+	height:228px;
+	padding-top:100px;
+}
+
+main-title {
+	font-size:75px;
+	padding-top:200px;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Personalized News Search</title>
+  <link href="https://fonts.googleapis.com/css?family=Bangers|Raleway:300,400,500,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Bangers" rel="stylesheet">
+  <script src="https://use.fontawesome.com/939e9dd52c.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+  <center> <main-title> News Flash </main-title></center>
+
+  <div class="mainDiv" align="right">
+    <h1 id="heading" align="left"> What information would you like to know about today? </h1>
+    <textarea id="mainText" placeholder="Enter text here"></textarea>
+    <button id="submitButton" onClick="submitClick()"><i class="fa fa-arrow-right" aria-hidden="true"></i></button>
+  </div> 
+
+  <!-- For Firebase --> 
+  <script src="https://www.gstatic.com/firebasejs/4.0.0/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyC_7pw8L60st0HBeJZAaOtE01BXwfmTAFo",
+      authDomain: "enghack-9cc64.firebaseapp.com",
+      databaseURL: "https://enghack-9cc64.firebaseio.com",
+      projectId: "enghack-9cc64",
+      storageBucket: "enghack-9cc64.appspot.com",
+      messagingSenderId: "712546268900"
+    };
+    firebase.initializeApp(config);
+  </script>
+
+  <!-- JavaScript -->
+  <script src="index.js">
+  </script>
+
+</body>
+</html>
