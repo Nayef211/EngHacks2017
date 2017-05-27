@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Personalized News Search</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,700" rel="stylesheet">
+
+  <script src="https://use.fontawesome.com/939e9dd52c.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+  <div class="mainDiv" align="right">
+    <h1 align="left">Personalized News Search</h1>
+    <textarea id="mainText" placeholder="What's on your mind?"></textarea>
+    <button id="submitButton" onClick="submitClick()"><i class="fa fa-arrow-right" aria-hidden="true"></i></button>   
+  </div>
+
+  <!-- For Firebase --> 
+  <script src="https://www.gstatic.com/firebasejs/4.0.0/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyC_7pw8L60st0HBeJZAaOtE01BXwfmTAFo",
+      authDomain: "enghack-9cc64.firebaseapp.com",
+      databaseURL: "https://enghack-9cc64.firebaseio.com",
+      projectId: "enghack-9cc64",
+      storageBucket: "enghack-9cc64.appspot.com",
+      messagingSenderId: "712546268900"
+    };
+
+    firebase.initializeApp(config);
+  </script>
+
+  <!-- JavaScript -->
+  <script src="index.js">
+
+  </script>
+
+</body>
+</html>
