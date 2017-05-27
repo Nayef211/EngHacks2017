@@ -9,16 +9,13 @@
   },
   "author": "Ali, Nayef, Tim, Tracy",
 
-
- /*
   "background": 
   {
-    //"persistent": false,
-    "scripts": ["SCRIPTNAME.FILEEXTENSION"]
+    "scripts": ["background.js"]
   },
-*/
 
-  "permissions": ["geolocation","<all_urls>", "unlimitedStorage"],
+
+  "permissions": ["geolocation","<all_urls>", "unlimitedStorage", "tabs"],
   
 
   "browser_action": 
