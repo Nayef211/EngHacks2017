@@ -1,0 +1,30 @@
+{
+  "name": "PaperBoy",
+  "version": "0.1",
+  "manifest_version":2,
+  "description": "Gets information from Google.",
+  "icons": 
+  { 
+  	"512": "NewspaperIcon.png"
+  },
+  "author": "Ali, Nayef, Tim, Tracy",
+
+
+ /*
+  "background": 
+  {
+    //"persistent": false,
+    "scripts": ["SCRIPTNAME.FILEEXTENSION"]
+  },
+*/
+
+  "permissions": ["geolocation","<all_urls>", "unlimitedStorage"],
+  
+
+  "browser_action": 
+  {
+    "default_title": "PaperBoy",
+    "default_icon": "NewspaperIcon.png",
+    "default_popup": "popup.html"
+  }
+}
