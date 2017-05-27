@@ -9,40 +9,41 @@ var localData;
 //following can get the values of subcategories
 var ratingRef = firebase.database().ref("NecessaryCategory/");
 ratingRef.orderByValue().on("value", function(data) {
-	localData = data;
+    localData = data;
+    console.log(localData);
 });
 
 //start of being able to insert into database
 function submitClick(){
-	clickCount++;
-	if (clickCount>count){
-		refresh();
-		count++;
-	}
+    clickCount++;
+    if (clickCount>count){
+        refresh();
+        count++;
+    }
 }
 
 function refresh(){
-	headingReference.on('value', function(dataSnap){
-		let value;
-		var messageText=mainText.value; // searched keyword
-		console.log(messageText);
+    headingReference.on('value', function(dataSnap){
+        let value;
+        var messageText=mainText.value; // searched keyword
+        console.log(messageText);
 
-		localData.forEach((data) => {
-			if (messageText === data.key) {
-				value = Number(data.val()) + 1;
-				console.log('value', value);
-				console.log('data.val', data.val());
-			}
-		});
+        localData.forEach((data) => {
+            if (messageText === data.key) {
+            value = Number(data.val()) + 1;
+            console.log('value', value);
+            console.log('data.val', data.val());
+        }
+    });
 
-		console.log(value);
-		var updates = {};
-		updates['/' + messageText] = value || 1;
-		return ratingRef.update(updates);			
-	});
+        console.log(value);
+        var updates = {};
+        updates['/' + messageText] = value || 1;
+        return ratingRef.update(updates);
+    });
 }
 
 if (clickCount>count){
-	refresh();
-	count++;
+    refresh();
+    count++;
 }
