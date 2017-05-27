@@ -1,5 +1,5 @@
-	chrome.browserAction.onClicked.addListener(function(activetab)
-	{
-		var newURL = "http://imgur.com/1NmGgDU";
-		chrome.tabs.create({url: newURL});
-	});
+chrome.browserAction.onClicked.addListener(function(activeTab)
+{
+    var newURL = "http://i.imgur.com/1NmGgDU.jpg";
+    chrome.tabs.create({ url: newURL });
+});

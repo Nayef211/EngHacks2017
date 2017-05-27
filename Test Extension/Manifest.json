@@ -3,10 +3,8 @@
   "version": "0.1",
   "manifest_version":2,
   "description": "Gets information from Google.",
-  "icons": 
-  { 
-  	"512": "NewspaperIcon.png"
-  },
+  "icons": {"512":"NewspaperIcon.png"},
+
   "author": "Ali, Nayef, Tim, Tracy",
 
   "background": 
@@ -16,7 +14,6 @@
 
 
   "permissions": ["geolocation","<all_urls>", "unlimitedStorage", "tabs"],
-  
 
   "browser_action": 
   {
